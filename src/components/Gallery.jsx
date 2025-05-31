@@ -20,14 +20,14 @@ const Gallery = () => {
   if (isLoading) {
     return (
       <section className='image-container'>
-        <p>isLoading...</p>
+        <h3>Loading...</h3>
       </section>
     );
   }
   if (error) {
     return (
       <section className='image-container'>
-        <p>Sorry there was an error</p>
+        <h3>Sorry there was an error</h3>
       </section>
     );
   }
@@ -35,7 +35,7 @@ const Gallery = () => {
   if (results.length < 1) {
     return (
       <section className='image-container'>
-        <p>No search results found</p>
+        <h3>No search results found</h3>
       </section>
     );
   }
