@@ -4,7 +4,6 @@ import { useAppContext } from '../utils/context';
 
 const url =
   `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_API_KEY}`;
-  console.log(import.meta.env.VITE_API_KEY);
   
 
 const Gallery = () => {
@@ -39,8 +38,6 @@ const Gallery = () => {
       </section>
     );
   }
-
-  console.log(results);
 
   return (
     <section className='image-container'>
